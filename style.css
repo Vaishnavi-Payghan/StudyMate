@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fc;
+    color: #172033;
+    min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #e7eaf0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.tagline {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #667085;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary-btn {
+    margin-top: 30px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 12px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+
+/* =========================
+   INTERVIEW SECTION
+========================= */
+
+.interview-section,
+.feedback-section {
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.interview-card,
+.feedback-card {
+    width: 100%;
+    max-width: 720px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #e7eaf0;
+    box-shadow: 0 15px 40px rgba(16, 24, 40, 0.07);
+}
+
+.progress {
+    font-size: 14px;
+    color: #667085;
+    margin-bottom: 22px;
+}
+
+.interview-card h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.hint {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
+    padding: 18px;
+    border: 1px solid #d9dee8;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #4f46e5;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading {
+    margin-top: 20px;
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* =========================
+   FEEDBACK
+========================= */
+
+.feedback-card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.score {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #eef2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #4f46e5;
+    margin-bottom: 30px;
+}
+
+.feedback-item {
+    padding: 20px 0;
+    border-top: 1px solid #eaecf0;
+}
+
+.feedback-item h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.feedback-item p {
+    color: #667085;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #98a2b3;
+    font-size: 14px;
+}
+
+
+/* =========================
+   HIDDEN
+========================= */
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .tagline {
+        display: none;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .interview-card,
+    .feedback-card {
+        padding: 25px;
+    }
+
+    .interview-card h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyMate - AI Interview Practice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">StudyMate</div>
+
+        <div class="tagline">
+            AI Interview Practice Partner
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HOME -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="badge">
+                    Built for a Friend ❤️
+                </span>
+
+                <h1>
+                    Practice interviews.<br>
+                    Build confidence.
+                </h1>
+
+                <p>
+                    StudyMate is a friendly AI practice partner
+                    that helps you prepare for interviews,
+                    improve your answers, and build confidence.
+                </p>
+
+                <button class="primary-btn" onclick="startInterview()">
+                    🎤 Start Interview
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTERVIEW -->
+        <section class="interview-section" id="interview">
+
+            <div class="interview-card">
+
+                <div class="progress">
+                    Question <span id="questionNumber">1</span> of 5
+                </div>
+
+                <h2 id="question">
+                    Tell me about yourself.
+                </h2>
+
+                <p class="hint">
+                    Take your time. There is no perfect answer.
+                </p>
+
+                <textarea
+                    id="answer"
+                    placeholder="Type your answer here..."
+                ></textarea>
+
+                <button
+                    class="primary-btn"
+                    onclick="analyzeAnswer()"
+                >
+                    Analyze My Answer
+                </button>
+
+                <div id="loading" class="loading hidden">
+                    Analyzing your answer...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEEDBACK -->
+        <section class="feedback-section hidden" id="feedback">
+
+            <div class="feedback-card">
+
+                <h2>✨ Your Feedback</h2>
+
+                <div class="score">
+                    <span id="score">--</span>/10
+                </div>
+
+                <div class="feedback-item">
+                    <h3>What you did well</h3>
+                    <p id="strengths"></p>
+                </div>
+
+                <div class="feedback-item">
+                    <h3>Improve this</h3>
+                    <p id="improvements"></p>
+                </div>
+
+                <div class="feedback-item">
+                    <h3>💡 Better approach</h3>
+                    <p id="betterAnswer"></p>
+                </div>
+
+                <button
+                    class="primary-btn"
+                    onclick="nextQuestion()"
+                >
+                    Next Question →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            StudyMate · Open AI Practice Partner
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
